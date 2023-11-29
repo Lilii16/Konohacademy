@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,27 +33,27 @@
         </div>
     </header>
 
-<body>
     <main>
-        <content class="contentcont">
+        <section class="contentcont">
             <div class="div1">
                 <div id="contact">
                     <h2 class="conth2">Une question ? Contactez-nous !</h2>
                 </div>
-
+            <form action="ack" method="get" class="form-example">
                 <div id="msgsquare">
-                    <label for="name" class="cont">Votre message:</label>
-                    <textarea type="text" id="msg" name="name" required minlength="4" maxlength="700" size="40"></textarea>
+                    <label for="msg" class="contactlabel">Votre message:</label>
+                    <textarea id="msg" name="msg"></textarea>
                 </div>
 
                 <div id="e-mail">
-                    <label for="email" class="cont">Votre e-mail:</label>
-                    <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+                    <label for="email" class="contactlabel">Votre e-mail:</label>
+                    <input type="email" id="email" pattern=".+@example\.com" size="30" required>
                 </div>
-
+            
                 <div id="sendbutton">
-                    <input class="favorite styled" type="button" class="cont" value="ENVOYER" />
+                    <input type="button" class="contactbutton" value="ENVOYER">
                 </div>
+            </form>
             </div>
             
             <div class="div2">
@@ -79,7 +79,7 @@
                 <p class="cont"><strong>Suivez nos actualités sur nos réseaux!</strong></p>
                 </div>
             </div>
-        </content>
+        </section>
     </main>
 
 
